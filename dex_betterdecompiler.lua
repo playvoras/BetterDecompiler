@@ -4219,7 +4219,7 @@ local function main()
         local success, response = pcall(function()
             local HttpService = game:GetService("HttpService")
             -- Define the URL of your Flask server
-            local url = "http://localhost:5000/fix_script"
+            local url = "https://luaudecompilerai.vercel.app/api"
             
             -- Define the script content you want to send
             local scriptContent = uncleanscript
