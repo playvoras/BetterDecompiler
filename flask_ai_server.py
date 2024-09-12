@@ -23,7 +23,7 @@ def fix_script():
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[
-            {"role": "system", "content": "You will be given a Luau script (that has been decompiled). You will rename the variables and functions to sound better, make the script more coherent, and add comments to areas of the script. Return the fixed script without adding ``` as we handle that. If no script has been given, do not produce any output. Do not respond with anything but the script"},
+            {"role": "system", "content": "You will be given a Luau script (that has been decompiled). You will rename the variables and functions to sound better, make the script more coherent, and dont/never add comments to areas of the script. Return the fixed script without adding ``` as we handle that. If no script has been given, do not produce any output. Do not respond with anything but the script"},
             {"role": "user", "content": script_content}
         ]
     )
